@@ -1,0 +1,100 @@
+/* Global */
+
+:root {
+
+    / * App Colors * /
+
+--color-primary: var(--color-black);
+--color-primary-variant: var(--color-gray);
+--color-accent: var(--color-blue);
+--color-accent-variant: var(--color-orange);
+--color-text: var(--color-white);
+
+    /* Colors */
+--color-white: #ffffff;
+--color-black: #050a13;
+--color-blue: #03e8f9;
+--color-orange: #fd6413;
+--color-gray: #1b1e26;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Noto Sans', 'sans-serif';
+    margin: 0;
+}
+
+h1,h2,h3,p1,p2,ul{
+    margin: 0;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color:var(--color-text)
+}
+
+button {
+    background-color: transparent;
+    outline: 0;
+    border: 0;
+}
+
+button:focus {
+    outline: 1px solid var(--color-accent);
+} 
+
+/* Header */
+
+.header {
+    position: fixed;
+    top: 0;
+    background-color: #050a13;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px;
+}
+
+.header-logo {
+    display: flex;
+    align-items: center;
+    gap:8px;
+}
+
+.header-logo-image {
+    width: 36px;
+    height: 36px;
+}
+
+.header-logo-title {
+    font-size: 1.8rem;
+}
+
+.header-menu {
+    display: flex;
+    gap:4px;
+
+}
+
+.header-menu-item {
+    padding: 8px 16px;
+    font: 8px;
+}
+
+.header-menu-item:hover{
+    border-bottom: 1px solid var(--color-accent);
+}
+
+.header-menu-item.active {
+    border: 1px solid var(--color-accent);
+    border-radius: 4px;
+}
