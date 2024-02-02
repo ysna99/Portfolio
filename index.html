@@ -92,7 +92,8 @@
             </ul>
         </section>
         <!-- Skills -->
-        <section id = "skills" class='section max-container'>
+        <section id = "skills" class='section'>
+           <div class='max-container'>
             <h2 class='title'>My Skills</h2>
             <p class='description'>Skills and attributes</p>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
@@ -103,35 +104,49 @@
     <section class='skills-coding'>
     <h3 class='skills-title'>Coding Skills</h3>
     <ul>
-        <li>
-            <div><span>HTML</span><span>98%</span>
+        <li class='bar'>
+            <div class='bar-metadata'><span>HTML</span><span>98%</span>
     </div>
-    <div><div style= "width: 98%"></div></div>
-</li>
-    <li>
-        <div><span>CSS</span><span>98%</span>
+    <div class='bar-bg'>
+        <div class='bar-value' style= "width: 98%"></div>
     </div>
-    <div><div style= "width: 90%"></div></div>
 </li>
-    <li>
-        <div><span>Javascript</span><span>98%</span>
+    <li class='bar'>
+        <div class='bar-metadata'><span>CSS</span><span>98%</span>
+    </div>
+    <div class='bar-bg'><div class='bar-value' style= "width: 90%"></div></div>
+</li>
+    <li class='bar'>
+        <div class='bar-metadata'>
+            <span>Javascript</span><span>98%</span>
         </div>
-        <div><div style= "width: 90%"></div></div>
+        <div class='bar-bg'>
+            <div class='bar-value' style= "width: 90%"></div>
+        </div>
     </li>
-    <li>
-        <div><span>React</span><span>98%</span>
+    <li class='bar'>
+        <div class='bar-metadata'>
+            <span>React</span><span>98%</span>
         </div>
-        <div><div style= "width: 80%"></div></div>
+        <div class='bar-bg'>
+            <div class='bar-value' style= "width: 80%"></div>
+        </div>
     </li>
-    <li>
-        <div><span>Typescript</span><span>98%</span>
+    <li class='bar'>
+        <div class='bar-metadata'>
+            <span>Typescript</span><span>98%</span>
         </div>
-        <div><div style= "width: 70%"></div></div>
+        <div class='bar-bg'>
+            <div class='bar-value' style= "width: 70%"></div>
+        </div>
     </li>
-    <li>
-        <div><span>C++</span><span>98%</span>
+    <li class='bar'>
+        <div class='bar-metadata'>
+            <span>C++</span><span>98%</span>
         </div>
-        <div><div style= "width: 98%"></div></div>
+        <div class='bar-bg'>
+            <div class='bar-value' style= "width: 98%"></div>
+        </div>
     </li>
 </ul>
 </section>
@@ -145,19 +160,27 @@
 <section class='skills-etc'>
     <h3 class='skills-title'>Etc</h3>
     <ul><li>Git</li></ul>
-</section></div>
+</section></div></div>
         </section>
 
         <!-- Work -->
         <section id = "work" class='section'>
-            <h2 class='title'>My Work</h2>
+            <div class='max-container'>
+                <h2 class='title'>My Work</h2>
             <p class='description'>Projects</p>
-          <ul>
-            <li><button>All <span>4</span>
-            </button></li>
-            <li><button>Front-end <span>3</span></button></li>
-            <li><button>Mobile <span>1</span></button></li>
+          <ul class='categories'>
+            <li>
+                <button class='category category-selected'>All <span class='category-count'>4</span>
+            </button>
+        </li>
+            <li>
+                <button class='category'>Front-end <span class='category-count'>3</span></button>
+            </li>
+            <li>
+                <button class='category'>Mobile <span class='category-count'>1</span></button>
+            </li>
           </ul>
+
           <ul>
             <li><a href="#" target="_blank">
                 <img src="images/projects/project1.webp" alt="Project1">
@@ -188,6 +211,7 @@
                 </div>
             </a></li>
           </ul>
+            </div>
         </section>
         <!-- Testimonials -->
         <section id = testimonials></section>
