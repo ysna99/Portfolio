@@ -112,13 +112,13 @@
     </div>
 </li>
     <li class='bar'>
-        <div class='bar-metadata'><span>CSS</span><span>98%</span>
+        <div class='bar-metadata'><span>CSS</span><span>90%</span>
     </div>
     <div class='bar-bg'><div class='bar-value' style= "width: 90%"></div></div>
 </li>
     <li class='bar'>
         <div class='bar-metadata'>
-            <span>Javascript</span><span>98%</span>
+            <span>Javascript</span><span>90%</span>
         </div>
         <div class='bar-bg'>
             <div class='bar-value' style= "width: 90%"></div>
@@ -126,7 +126,7 @@
     </li>
     <li class='bar'>
         <div class='bar-metadata'>
-            <span>React</span><span>98%</span>
+            <span>React</span><span>80%</span>
         </div>
         <div class='bar-bg'>
             <div class='bar-value' style= "width: 80%"></div>
@@ -134,7 +134,7 @@
     </li>
     <li class='bar'>
         <div class='bar-metadata'>
-            <span>Typescript</span><span>98%</span>
+            <span>Typescript</span><span>70%</span>
         </div>
         <div class='bar-bg'>
             <div class='bar-value' style= "width: 70%"></div>
@@ -181,32 +181,32 @@
             </li>
           </ul>
 
-          <ul>
-            <li><a href="#" target="_blank">
-                <img src="images/projects/project1.webp" alt="Project1">
-                <div>
-                    <h3>Project #1</h3>
-                    <p>Clone Coding with HTML, CSS</p>
-                </div>
-            </a></li>
-            <li><a href="#" target="_blank">
-                <img src="images/projects/project2.webp" alt="Project2">
-                <div>
-                    <h3>Project #2</h3>
+          <ul class='projects'>
+           <li class='project'> <a href="#" target="_blank">
+            <img src="images/projects/project1.webp" alt="Project1" class='project-img'>
+            <div class='project-metadata'>
+                <h3 class='project-title'>Project #1</h3>
+                <p>Clone Coding with HTML, CSS</p>
+            </div>
+        </a></li>
+            <li class='project'><a href="#" target="_blank">
+                <img src="images/projects/project2.webp" alt="Project2" class='project-img'>
+                <div class='project-metadata'>
+                    <h3 class='project-title'>Project #2</h3>
                     <p>whatever</p>
                 </div>
             </a></li>
-            <li><a href="#" target="_blank">
-                <img src="images/projects/project3.webp" alt="Project3">
-                <div>
-                    <h3>Project #3</h3>
+            <li class='project'><a href="#" target="_blank">
+                <img src="images/projects/project3.webp" alt="Project3" class='project-img'>
+                <div class='project-metadata'>
+                    <h3 class='project-title'>Project #3</h3>
                     <p>whatever</p>
                 </div>
             </a></li>
-            <li><a href="#" target="_blank">
-                <img src="images/projects/project4.webp" alt="Project4">
-                <div>
-                    <h3>Project #4</h3>
+            <li class='project'><a href="#" target="_blank">
+                <img src="images/projects/project4.webp" alt="Project4" class='project-img'>
+                <div class='project-metadata'>
+                    <h3 class='project-title'>Project #4</h3>
                     <p>whatever</p>
                 </div>
             </a></li>
@@ -217,26 +217,32 @@
         <section id = testimonials></section>
         <!-- Arrow up -->
         <aside>
-            <a href="home" title="back to top">
+            <a class='arrow-up'
+            href="home" title="back to top">
                 <i class="fa-solid fa-arrow-up"></i>
             </a>
         </aside>
     </main>
     <!-- Footer -->
     <footer id="contact" class='section'>
-        <h2 class='title'>Let&#39;s talk</h2>
-        <p class='description'>ysna@umich.edu</p>
-        <ul>
-            <li><a href="https://github.com/ysna99" target="_blank" title="My github link">
+       <div class='max-container'><h2 class='title'>Let&#39;s talk</h2>
+    <p class='description'>ysna@umich.edu</p>
+    <ul class='contact-links'>
+        <li>
+            <a class='contact-link'
+            href="https://github.com/ysna99" target="_blank" title="My github link">
                 <i class="fa-brands fa-github"></i>
             </a>
         </li>
-            <li><a href="https://www.linkedin.com/feed/" target="_blank" title="My Linkedin link">
+        <li>
+            <a class='contact-link'
+            href="https://www.linkedin.com/feed/" target="_blank" title="My Linkedin link">
                 <i class="fa-brands fa-linkedin"></i>
-            </a></li>
-        </ul>
-<p>@Yunseong All rights reserved</p>
-
+            </a>
+        </li>
+    </ul>
+    <p>@Yunseong All rights reserved</p>
+</div>
     </footer>
 </body>
 </html>
