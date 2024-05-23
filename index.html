@@ -1,248 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <!-- seo -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Yunseong&#39;s Portfolio</title>
-    <meta name="description" content="Portfolio website for Yunseong"/>
-    <meta name="author" content="Yunseong Na" />
-    <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
-
-    <!-- Open Graph Data -->
-    <meta property="og:title" content="Yunseong's Portfolio website" />
-    <meta property="og:type" content="website" />
-    <meta property="og:url" content="배포 후 작성" />
-    <meta property="og:image" content="배포 후 작성된 이미지 url" />
-
-    <!-- Google Fonts -->
+    <!-- SEO -->
+    <title>Yun&#39;s Portfolio</title>
+    <meta name="description" content="Portfolio Website for a passionate CS student Yun">
+    <meta name = "author" content='YUNSEONG NA'>
+    <link rel="shortcut icon" href="images/favicon (1).png" type="image/x-icon">
+    <!-- OPEN GRAPH(OG) -->
+    <meta property='og:title' content='윤성의 포트폴리오'>
+    <meta property='og:type' content='website'>
+    <meta property='og:url' content='생성 후 배포 주소'>
+    <meta property = 'og:image' content='생성 후 배포 이미지'>
+    <!-- Google Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500&display=swap" rel="stylesheet">
-
-<!-- Font Awesome -->
-<script src="https://kit.fontawesome.com/dfb5bba30d.js" crossorigin="anonymous"></script>
-<!-- css -->
-<link rel="stylesheet" href="css/style.css">
-<!-- Javascript -->
-<script src="src/main.js" defer></script> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+        rel="stylesheet">
+    <!-- font awesome -->
+        <script src="https://kit.fontawesome.com/dfb5bba30d.js" crossorigin="anonymous"></script>
+     <!-- CSS (따로 다른 경로 폴더 생성 후 파일 설정)-->
+     <link rel="stylesheet" href="css/style.css">
+     <!-- Java Script -->
+     <!-- defer 추가해서 브라우저가 스크립트 다운로드 하는 것 기다리지 말고 일단 html 파일 실행될 수 있게 설정 -->
+     <script src="src/main.js" defer></script>
 </head>
-
 
 <body>
     <!-- Header -->
-    <header class='header'>
-        <div class='header-logo'>
-            <img class='header-logo-image' src="images/favicon.png" alt="logo">
-        <h1 class='header-logo-title'><a href="#">Yun</a></h1>
-    </div>
+    <header>
+        <!-- logo part on the upper right side -->
+        <div>
+            <!-- image of the website -->
+            <img src="images/favicon.png" alt="logo">
+            
+            <!-- title of the website -->
+            <h1><a href="#">Yunseong</a></h1>
+        </div>
+        <!--  Links on the upper left side-->
         <nav>
-            <ul class='header-menu'>
-            <li><a class='header-menu-item active' href="#home">Home</a></li>
-            <li><a  class='header-menu-item'  href="#about">about</a></li>
-            <li><a  class='header-menu-item'  href="#skills">skills</a></li>
-            <li><a  class='header-menu-item'  href="#work">My work</a></li>
-            <li><a  class='header-menu-item'  href="#testimonials">Testimonials</a></li>
-            <li><a  class='header-menu-item'  href="#contact">Contact</a></li>
-        </ul></nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#work">My Work</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
     </header>
     <!-- Main -->
     <main>
         <!-- Home -->
-        <section id = "home">
-            <img class='home-image' src="images/favicon (1).png" alt="Yun's profile" />
-            <h2 class='home-title'>Hello <br>I&#39;m a <strong class='home-title-strong'>Passionate Coder</strong>, Yun</h2>
-            <p class='home-description'>University of Michigan student majoring in CS </p>
-            <a class='home-contact' href="#contact">Contact Me</a>
-        </section>
-        
+        <section id='home'></section>
         <!-- About -->
-        <section id = "about" class='section max-container'>
-            <h2 class='title'>About me</h2>
-            <p class='description'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
-                Quia culpa at consequuntur optio iste blanditiis animi voluptates, 
-                perferendis aperiam ipsa dolorem nulla vitae deserunt quos reiciendis odit assumenda molestiae molestias!</p>
-                <ul class='majors'>
-                <li class='major'>
-                    <i class="fa-brands fa-html5 major-icon"></i>
-                    <p class='major-title'>Front-end</p>
-                    <p>HTML, CSS, Javascript, React, Typescript</p>
-                </li>
-                <li class='major'>
-                    <i class="fa-solid fa-mobile major-icon"></i>
-                <p class='major-title'>mobile</p>
-                <p>Android, iOS, React Native</p>
-            </li>
-
-            <li class='major'>
-                <i class="fa-solid fa-code-pull-request major-icon"></i>
-                <p class='major-title'>Data structure & Algorithms</p>
-                <p>C++, Javascript</p>
-            </li>
-            </ul>
-
-            <ul class='jobs'>
-                <li class='job'>
-                    <img src="images/daishin-logos-idyvgg8an4.png" class='job-icon' alt="daishin logo">
-            <div>
-                <p class='job-name'>Worked as a research assistant at Daishin Financial Group</p>
-            <p class='job-period'>2021 Jan - 2021 July</p>
-        </div>
-            </li>
-            </ul>
-        </section>
+        <section id='about'></section>
         <!-- Skills -->
-        <section id = "skills" class='section'>
-           <div class='max-container'>
-            <h2 class='title'>My Skills</h2>
-            <p class='description'>Skills and attributes</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                Expedita molestiae beatae aspernatur odit dolor molestias eos! 
-                Fugiat ratione id ducimus quo in. 
-                Ipsam dolorem eveniet, nesciunt quasi cupiditate corporis at?</p>
-<div class='skills'>
-    <section class='skills-coding'>
-    <h3 class='skills-title'>Coding Skills</h3>
-    <ul>
-        <li class='bar'>
-            <div class='bar-metadata'><span>HTML</span><span>98%</span>
-    </div>
-    <div class='bar-bg'>
-        <div class='bar-value' style= "width: 98%"></div>
-    </div>
-</li>
-    <li class='bar'>
-        <div class='bar-metadata'><span>CSS</span><span>90%</span>
-    </div>
-    <div class='bar-bg'><div class='bar-value' style= "width: 90%"></div></div>
-</li>
-    <li class='bar'>
-        <div class='bar-metadata'>
-            <span>Javascript</span><span>90%</span>
-        </div>
-        <div class='bar-bg'>
-            <div class='bar-value' style= "width: 90%"></div>
-        </div>
-    </li>
-    <li class='bar'>
-        <div class='bar-metadata'>
-            <span>React</span><span>80%</span>
-        </div>
-        <div class='bar-bg'>
-            <div class='bar-value' style= "width: 80%"></div>
-        </div>
-    </li>
-    <li class='bar'>
-        <div class='bar-metadata'>
-            <span>Typescript</span><span>70%</span>
-        </div>
-        <div class='bar-bg'>
-            <div class='bar-value' style= "width: 70%"></div>
-        </div>
-    </li>
-    <li class='bar'>
-        <div class='bar-metadata'>
-            <span>C++</span><span>98%</span>
-        </div>
-        <div class='bar-bg'>
-            <div class='bar-value' style= "width: 98%"></div>
-        </div>
-    </li>
-</ul>
-</section>
-<section class='skills-tools'>
-    <h3 class='skills-title'>Tools</h3>
-    <ul>
-        <li>Visual Studio</li>
-    <li>Xcode</li>
-</ul>
-</section>
-<section class='skills-etc'>
-    <h3 class='skills-title'>Etc</h3>
-    <ul><li>Git</li></ul>
-</section></div></div>
-        </section>
-
+        <section id='skills'></section>
         <!-- Work -->
-        <section id = "work" class='section'>
-            <div class='max-container'>
-                <h2 class='title'>My Work</h2>
-            <p class='description'>Projects</p>
-          <ul class='categories'>
-            <li>
-                <button class='category category-selected'>All <span class='category-count'>4</span>
-            </button>
-        </li>
-            <li>
-                <button class='category'>Front-end <span class='category-count'>3</span></button>
-            </li>
-            <li>
-                <button class='category'>Mobile <span class='category-count'>1</span></button>
-            </li>
-          </ul>
-
-          <ul class='projects'>
-           <li class='project'> <a href="#" target="_blank">
-            <img src="images/projects/project1.webp" alt="Project1" class='project-img'>
-            <div class='project-metadata'>
-                <h3 class='project-title'>Project #1</h3>
-                <p>Clone Coding with HTML, CSS</p>
-            </div>
-        </a></li>
-            <li class='project'><a href="#" target="_blank">
-                <img src="images/projects/project2.webp" alt="Project2" class='project-img'>
-                <div class='project-metadata'>
-                    <h3 class='project-title'>Project #2</h3>
-                    <p>whatever</p>
-                </div>
-            </a></li>
-            <li class='project'><a href="#" target="_blank">
-                <img src="images/projects/project3.webp" alt="Project3" class='project-img'>
-                <div class='project-metadata'>
-                    <h3 class='project-title'>Project #3</h3>
-                    <p>whatever</p>
-                </div>
-            </a></li>
-            <li class='project'><a href="#" target="_blank">
-                <img src="images/projects/project4.webp" alt="Project4" class='project-img'>
-                <div class='project-metadata'>
-                    <h3 class='project-title'>Project #4</h3>
-                    <p>whatever</p>
-                </div>
-            </a></li>
-          </ul>
-            </div>
-        </section>
-        <!-- Testimonials -->
-        <section id = testimonials></section>
-        <!-- Arrow up -->
-        <aside>
-            <a class='arrow-up'
-            href="home" title="back to top">
-                <i class="fa-solid fa-arrow-up"></i>
-            </a>
-        </aside>
+        <section id='work'></section>
+        <!-- Contact -->
+        <section id='contact'></section>
+        <!-- Arrow Up(맨 믿 스크롤 화살표-메인과 구분되는 aside 태그 사용) -->
+        <aside></aside>
     </main>
     <!-- Footer -->
-    <footer id="contact" class='section'>
-       <div class='max-container'><h2 class='title'>Let&#39;s talk</h2>
-    <p class='description'>ysna@umich.edu</p>
-    <ul class='contact-links'>
-        <li>
-            <a class='contact-link'
-            href="https://github.com/ysna99" target="_blank" title="My github link">
-                <i class="fa-brands fa-github"></i>
-            </a>
-        </li>
-        <li>
-            <a class='contact-link'
-            href="https://www.linkedin.com/feed/" target="_blank" title="My Linkedin link">
-                <i class="fa-brands fa-linkedin"></i>
-            </a>
-        </li>
-    </ul>
-    <p>@Yunseong All rights reserved</p>
-</div>
-    </footer>
+    <footer></footer>
 </body>
 </html>
