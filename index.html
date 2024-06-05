@@ -24,47 +24,207 @@
      <link rel="stylesheet" href="css/style.css">
      <!-- Java Script -->
      <!-- defer 추가해서 브라우저가 스크립트 다운로드 하는 것 기다리지 말고 일단 html 파일 실행될 수 있게 설정 -->
-     <script src="src/main.js" defer></script>
+     <!-- JS 파일 서로 독립적 모듈화 -->
+     <script type='module'src="src/main.js" defer></script>
+     <script type='module'src='src/projects.js' defer></script>
 </head>
 
 <body>
     <!-- Header -->
-    <header>
+    <header class='header'>
         <!-- logo part on the upper right side -->
-        <div>
+        <div class='header-logo'>
             <!-- image of the website -->
-            <img src="images/favicon.png" alt="logo">
-            
+            <img class='header-logo-img'src="images/favicon.png" alt="logo">
+
             <!-- title of the website -->
-            <h1><a href="#">Yunseong</a></h1>
+            <h1 class='header-logo-title'><a href="#">Yunseong</a></h1>
+           
         </div>
         <!--  Links on the upper left side-->
-        <nav>
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#work">My Work</a></li>
-                <li><a href="#contact">Contact</a></li>
+        <nav class='header-nav'>
+            <ul class='header-menu'>
+                <li><a class='header-menu-item active'href="#home">Home</a></li>
+                <li><a class='header-menu-item'href="#about">About</a></li>
+                <li><a class='header-menu-item'href="#skills">Skills</a></li>
+                <li><a class='header-menu-item'href="#work">My Work</a></li>
+                <li><a class='header-menu-item'href="#contact">Contact</a></li>
             </ul>
         </nav>
+        <button class='header-toggle' aria-label='navigation menu toggle'><i class="fa-solid fa-bars"></i></button>
     </header>
     <!-- Main -->
     <main>
         <!-- Home -->
-        <section id='home'></section>
+        <section id='home'>
+            <div class='home-container'>
+                <img class='home-img' src="images/favicon.png" alt="Yunseong&#39;s favorite food">
+                <h2 class='home-title'>Hello <br> I&#39;m <strong class='home-title-strong'>Passion Coder</strong>, Yunseong</h2>
+                <p class='home-description'>A passionate student studying computer science at U of Michigan </p>
+                <a class='home-contact' href="#contact">Contact Me</a>
+            </div>
+        </section>
         <!-- About -->
-        <section id='about'></section>
+        <section id='about' class='section max-container'>
+            <h2 class='title'>About me</h2>
+            <p class='description'>rodls ashfkskf asfflkaksfkalks mxncnklsfkalf ajksfnnlakfklwknfsjfhkjsfnsaklshf,sba,fflkshk</p>
+            <ul class='majors'>
+                
+                <li class='major'>
+                    <i class="fa-brands fa-html5 major-icon"></i>
+                    <p class='major-title'>Front-end</p>
+                    <p>HTML, CSS, JS, React, Web APIs</p>
+                </li>
+                <li class='major'>
+                    <i class="fa-solid fa-mobile major-icon"></i>
+                    <p class='major-title'>Mobile</p>
+                    <p>Android, iOS, React Native</p>
+                </li>
+                <li class='major'>
+                    <i class="fa-solid fa-code-compare major-icon"></i>
+                    <p class='major-title'>Problem Solving</p>
+                    <p>C++, Data structure, Algorithm </p>
+                </li>
+            </ul>
+        <ul class='jobs'>
+            <li class='job'>
+                <img class='job-img'src="images/daishin-logos-idyvgg8an4.png" alt="Daishin logo">
+                <div>
+                    <p class='job-name'>Daishin Finance as a Research Assistant</p>
+                    <p class='job-period'>2021 Feb - 2021 Aug</p>
+                </div>
+            </li>
+            <li class='job'>
+                <img class='job-img'src="images/michigan-wolverines-seeklogo.png" alt="UM logo">
+                <p class='job-name'>Junior student studying Computer Science at U of Michigan</p>
+            </li>
+        </ul>
+        </section>
         <!-- Skills -->
-        <section id='skills'></section>
+        <section id='skills' class='section'>
+            <div class='max-container'>
+                <h2 class='title'>My Skills</h2>
+                <p class='description'>skills & Attributes</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas facere ipsa cupiditate reiciendis, vel architecto
+                    id rerum incidunt doloribus quisquam labore commodi esse temporibus magni quo nulla corporis soluta? Saepe?</p>
+                <div class='skills'>
+                    <section class='skills-coding'>
+                        <h3 class='skills-title'>Coding Skills</h3>
+                        <ul>
+                            <li class='bar'>
+                                <div class='bar-metadata'><span>HTML</span><span>95%</span></div>
+                                <!-- 실제 바 퍼센테지 나타내는 부분 -->
+                                <div>
+                                    <div class='bar-value'style='width: 95%;'></div>
+                                </div>
+                            </li>
+                            <li class='bar'>
+                                <div class='bar-metadata'><span>CSS</span><span>90%</span></div>
+                                <div class='bar-bg'>
+                                    <div class='bar-value'style='width: 90%;'></div>
+                                </div>
+                            </li>
+                            <li class='bar'>
+                                <div class='bar-metadata'><span>Javascript</span><span>90%</span></div>
+                                <div class='bar-bg'>
+                                    <div class='bar-value'style='width: 90%;'></div>
+                                </div>
+                            </li>
+                            <li class='bar'>
+                                <div class='bar-metadata'><span>C++</span><span>98%</span></div>
+                                <div class='bar-bg'>
+                                    <div class='bar-value'style='width: 98%;'></div>
+                                </div>
+                            </li>
+                            <li class='bar'>
+                                <div class='bar-metadata'><span>React</span><span>80%</span></div>
+                                <div class='bar-bg'>
+                                    <div class='bar-value'style='width: 80%;'></div>
+                                </div>
+                            </li>
+                        </ul>
+                    </section>
+                    <section class='skills-tools'>
+                        <h3 class='skills-title'>Tools</h3>
+                        <ul class='items'>
+                            <li>Visual Studio Code</li>
+                            <li>Xcode</li>
+                            <li>Git</li>
+                        </ul>
+                    </section>
+                </div>
+            </div>
+        </section>
         <!-- Work -->
-        <section id='work'></section>
-        <!-- Contact -->
-        <section id='contact'></section>
-        <!-- Arrow Up(맨 믿 스크롤 화살표-메인과 구분되는 aside 태그 사용) -->
-        <aside></aside>
+        <section id='work' class='section'>
+            <div class='max-container'>
+                <h2 class='title'>My Work</h2>
+                <p class='description'>project</p>
+                <ul class='categories'>
+                    <li>
+                        <button class='category category-selected' data-category='all'>All<span class='category-cnt'>4</span></button>
+                    </li>
+                    <li>
+                        <button class='category' data-category='front-end'>Front-end<span class='category-cnt'>2</span></button>
+                    </li>
+                    <li>
+                        <button class='category' data-category='mobile'>Mobile<span class='category-cnt'>2</span></button>
+                    </li>
+                </ul>
+                <ul class='projects'>
+                    <li class='project' data-type='front-end'><a href="#" target='_blank' >
+                            <img src="images/projects/project1.webp" alt="project1" class='project-img'>
+                            <div class='project-metadata'>
+                                <h3 class='project-title'>Project #1</h3>
+                                <p>Portfolio Website with HTML, CSS</p>
+                            </div>
+                        </a></li>
+                    <li class='project' data-type='front-end'><a href="#" target='_blank'>
+                            <img src="images/projects/project2.webp" alt="project2" class='project-img'>
+                            <div class='project-metadata'>
+                                <h3 class='project-title'>Project #2</h3>
+                                <p>To do list with React</p>
+                            </div>
+                        </a></li>
+                    <li class='project' data-type='mobile'><a href="#" target='_blank'>
+                            <img src="images/projects/project3.webp" alt="project3" class='project-img'>
+                            <div class='project-metadata'>
+                                <h3 class='project-title'>Project #3</h3>
+                                <p>To do list with React</p>
+                            </div>
+                        </a></li>
+                    <li class='project' data-type='mobile'><a href="#" target='_blank'>
+                            <img src="images/projects/project4.webp" alt="project4" class='project-img'>
+                            <div class='project-metadata'>
+                                <h3 class='project-title'>Project #4</h3>
+                                <p>To do list with React</p>
+                            </div>
+                        </a></li>
+                </ul>
+            </div>
+        </section>
+        <!-- Arrow Up(맨 밑 스크롤 화살표-메인과 구분되는 aside 태그 사용) -->
+        <aside>
+            <a class='arrow-up' href="#home" title='Back to top'><i class="fa-solid fa-arrow-up"></i></a>
+        </aside>
     </main>
+
     <!-- Footer -->
-    <footer></footer>
+    <footer id='contact' class ='section'>
+    <div class='max-container'>
+        <h2 class='contact-title'>Let&#39;s talk</h2>
+        <p>ysna@umich.edu</p>
+        <ul class='contact-links'>
+            <li><a class='contact-link1' href="https://github.com/ysna99" target='_blank' title='my github link'><i
+                        class="fa-brands fa-github"></i></a></li>
+                        <li>
+                            <a class='contact-link2' href="https://www.linkedin.com/feed/" target='_blank' title='Linkedin'>
+                                <i class="fa-brands fa-linkedin"></i>
+                            </a>
+                        </li>
+        </ul>
+        <p>ⒸYunseong Na All rights reserved</p>
+    </div>
+</footer>
 </body>
 </html>
