@@ -1,0 +1,15 @@
+# Claude Code
+.claude/
+
+# OS metadata
+.DS_Store
+Thumbs.db
+
+# Node dependencies & builds (if applicable)
+node_modules/
+dist/
+build/
+
+# Local env files
+.env
+.env.local
